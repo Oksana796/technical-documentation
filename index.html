@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Documentation</header>
+      <ul class="ul-menu">
+        <li class="li-menu">
+          <a href="#Introduction" class="nav-link">Introduction</a>
+        </li>
+        <li class="li-menu">
+          <a href="#What_should_you_already_know" class="nav-link"
+            >What should you already know</a
+          >
+        </li>
+        <li class="li-menu">
+          <a href="#JavaScript_and_Java" class="nav-link"
+            >JavaScript and Java</a
+          >
+        </li>
+        <li class="li-menu">
+          <a href="#Hello_World" class="nav-link">Hello World</a>
+        </li>
+        <li class="li-menu">
+          <a href="#Variables" class="nav-link">Variables</a>
+        </li>
+        <li class="li-menu">
+          <a href="#Declaring_variables" class="nav-link"
+            >Declaring variables</a
+          >
+        </li>
+        <li class="li-menu">
+          <a href="#Variable_scope" class="nav-link">Variable scope</a>
+        </li>
+        <li class="li-menu">
+          <a href="#Data_types" class="nav-link">Data types</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            JavaScript is a cross-platform, object-oriented scripting language.
+            It is a small and lightweight language.
+          </p>
+          <ul class="ul-main">
+            <li class="li-main">
+              Client-side JavaScript extends the core language by supplying
+              objects to control a browser and its Document Object Model (DOM).
+            </li>
+            <li class="li-main">
+              For example, client-side extensions allow an application to place
+              elements on an HTML form and respond to user events such as mouse
+              clicks, form input, and page navigation.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_should_you_already_know">
+        <header>What should you already know</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+          <ul class="ul-main">
+            <li class="li-main">
+              A general understanding of the Internet and the World Wide Web
+              (WWW).
+            </li>
+            <li class="li-main">
+              Good working knowledge of HyperText Markup Language (HTML).
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header>JavaScript and Java</header>
+        <article>
+          <p>
+            JavaScript and Java are similar in some ways but fundamentally
+            different in some others. The JavaScript language resembles Java but
+            does not have Java's static typing and strong type checking.
+          </p>
+          <p>
+            JavaScript follows most Java expression syntax, naming conventions
+            and basic control-flow constructs which was the reason why it was
+            renamed from LiveScript to JavaScript.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <article>
+          <p>
+            To get started with writing JavaScript, open the Scratchpad and
+            write your first "Hello world" JavaScript code:
+          </p>
+          <code
+            >function greetMe(yourName) { alert("Hello " + yourName); }
+            <br />
+            greetMe("World");</code
+          >
+          <p>
+            Select the code in the pad and hit Ctrl+R to watch it unfold in your
+            browser!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>
+            You use variables as symbolic names for values in your application.
+            The names of variables, called identifiers, conform to certain
+            rules.
+          </p>
+          <p>
+            A JavaScript identifier must start with a letter, underscore (_), or
+            dollar sign ($); subsequent characters can also be digits (0-9).
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Declaring_variables">
+        <header>Declaring variables</header>
+        <article>
+          <p>You can declare a variable in three ways:</p>
+          <p>
+            With the keyword var. For example,
+            <code>var x = 42.</code>
+            This syntax can be used to declare both local and global variables.
+          </p>
+          <p>
+            By simply assigning it a value. For example,
+            <code>x = 42.</code>
+            This always declares a global variable. It generates a strict
+            JavaScript warning. You shouldn't use this variant.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <article>
+          <p>
+            This behavior changes, when using the let declaration introduced in
+            ECMAScript 2015.
+          </p>
+          <code
+            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+            not defined</code
+          >
+          <p>
+            JavaScript before ECMAScript 2015 does not have block statement
+            scope; rather, a variable declared within a block is local to the
+            function (or global scope) that the block resides within.
+          </p>
+          <code>if (true) { var x = 5; } console.log(x); // 5</code>
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p>The latest ECMAScript standard defines seven data types:</p>
+          <ul>
+            <li>Six data types that are primitives:</li>
+            <ul>
+              <li>Boolean. true and false.</li>
+              <li>null. A special keyword denoting a null value.</li>
+              <li>undefined. A top-level property whose value is undefined.</li>
+              <li>Number. 42 or 3.14159.</li>
+              <li>String. "Howdy"</li>
+            </ul>
+            <li>and Object</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

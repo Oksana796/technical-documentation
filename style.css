@@ -1,0 +1,99 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  display: block;
+  background-color: grey;
+}
+@media (max-width: 1000px) {
+  #navbar {
+    display: block;
+    position: absolut;
+    top: 0;
+    width: 100%;
+    max-height: 240px;
+    z-index: 1;
+  }
+  .ul-menu {
+    height: 180px;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 240px;
+  }
+}
+
+header {
+  font-size: 28px;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  margin: 15px;
+}
+.ul-menu {
+  display: block;
+  line-height: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 0;
+}
+.li-menu {
+  border: 1px solid black;
+  display: block;
+  list-style-type: none;
+  position: relative;
+  text-align: left;
+}
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+main {
+  margin-left: 310px;
+  display: block;
+  position: absolut;
+  padding: 20px;
+}
+article {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 15px;
+}
+p {
+  display: block;
+  margin: 15px 0;
+}
+.ul-main {
+  display: block;
+  list-style-type: disc;
+  margin: 15px 0;
+  padding-left: 40px;
+}
+.li-main {
+  margin: 15px 0 0 20px;
+  text-align: left;
+  display: list-item;
+}
+code {
+  display: block;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 14px;
+  background-color: grey;
+  opacity: 0.8;
+  color: black;
+  margin: 10px;
+  padding: 15px;
+  line-height: 1.7;
+  position: relative;
+  text-align: left;
+  overflow-wrap: normal;
+}
